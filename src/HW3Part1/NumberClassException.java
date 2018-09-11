@@ -1,6 +1,6 @@
 package HW3Part1;
 
-public class NumberClassException extends Exception {
+public class NumberClassException extends ClassCastException {
     public NumberClassException() {
         super();
     }

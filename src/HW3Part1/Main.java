@@ -4,21 +4,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ObjectBox box = new ObjectBox();
+        Integer[] data = {46, 4, 34, 56, 43, 2};
+        MathBox mathBox = new MathBox(data);
 
-        box.addObject(22);
-        box.addObject(new ObjectBox());
-        box.addObject(12);
-        box.addObject("34");
+        // second task
+        System.out.println(mathBox.summator());
 
-        try {
-            //System.out.println(box.summator());
-            System.out.println(box.splitter(2));
-        } catch (NumberClassException e) {
-            System.out.println("Элементы массива не являются Number");
-        }
+        // third task
+        System.out.println(mathBox.splitter(123));
 
-        box.dump();
+        // Fifth task
+
+        System.out.println(mathBox.delete(34));
+
+        System.out.println(mathBox.dump());
 
     }
 }
